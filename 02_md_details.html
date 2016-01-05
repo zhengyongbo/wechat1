@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>02_门店详情</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="asserts/styles/vendor.min.css">
+    
+    	<link rel="stylesheet" href="asserts/styles/main.css">
+    
+</head>
+
+</head>
+<body>
+    <div id="main">
+     	
+			
+
+<nav class="top-nav clearfix false">
+	
+    <a href="index.html" class="pull-left left-angel">
+        <i class="mdi-hardware-keyboard-arrow-left"></i>
+    </a>
+    
+	
+	
+
+	<h3 class="text-center no-margin">02_门店详情</h3>
+</nav>
+
+     	
+
+        <!-- 02_md_details 门店详情主体 开始 -->
+<div class="hh-md-details grey lighten-4">
+
+    <div class="md-name hh-padding-10 red accent-2 white-text text-center hh-font-size-20">
+        <b>鱼洞门市部鱼洞门市部鱼洞门市部</b>
+    </div>
+
+    <!-- 门店详情 开始 -->
+    <div class="sawtooth-back white-text hh-font-size-12">
+        <div class="head-pic">
+            <img src="asserts/images/hh-pic.jpg" alt="">
+        </div>
+        <ul class="info-text">
+            <li>地址：重庆市巴南区鱼洞下河路31-4#</li>
+            <li>传真：023-66232066 </li>
+            <li>营业时间： 星期一～五 09:00~18:00、星期六～日 10:00~17:00</li>
+        </ul>
+        <div class="btn-group btn-group-justified text-center hh-btn">
+            <div class="btn">
+                <a href="javascript:void(0)" class="white red-text text-accent-2">
+                    <i class="mdi-action-settings-phone hh-font-size-14 icon"></i><b> 023-6623206666</b>
+                </a>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)" class="white red-text text-accent-2">
+                    <i class="mdi-action-account-balance hh-font-size-14 icon"></i><b> 进入微店铺</b>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 门店详情 结束 -->
+
+    <!-- 搜索 开始 -->
+    <div class="hh-md-search clearfix">
+    	<div class="search clearfix">
+    		<div class="pull-left hh-font-size-18 hh-text">从</div>
+    		<div class="back white">
+	    		<input class="pull-left white" placeholder="输入您想去的目的地..." type="text">
+				<button class="hh-font-size-18 btn red accent-2 white-text pull-right">到这里</button>
+			</div>
+    	</div>
+    	<div class="hh-radio clearfix">
+    		<label class="pull-left"><input class="pull-left" type="radio"><span>驾车</span></label>
+    		<label class="pull-left"><input class="pull-left" type="radio"><span>步行</span></label>
+    		<label class="pull-left"><input class="pull-left" type="radio"><span>坐公交（目前仅支持市内查询）</span></label>
+    	</div>
+    </div>
+    <!-- 搜索 结束 -->
+
+    <!-- 地图 开始 -->
+    <div class="hh-map hh-padding-20">
+    	<div id="map">
+        </div>
+    </div>
+    <!-- 地图 结束 -->
+</div>
+
+<!-- 02_md_details 门店详情主体 结束 -->
+    </div>
+	
+		<!-- 底部导航 开始 -->
+<footer class="hh-02-foot" role="contentinfo">
+	
+    <nav class="btn-group btn-group-justified hh-02-home-nav-foot" role="navigation">
+        
+        
+        <a href="javascript:void(0)" class="btn red darken-2 white-text hh-font-size-16">
+            <i class="mdi-action-home icon hh-font-size-20"></i><span>首页</span>
+        </a>
+        
+        <a href="javascript:void(0)" class="btn red darken-2 white-text hh-font-size-16">
+            <i class="mdi-social-person icon hh-font-size-20"></i><span>我的订单</span>
+        </a>
+        
+        <a href="javascript:void(0)" class="btn red darken-2 white-text hh-font-size-16">
+            <i class="mdi-social-people icon hh-font-size-20"></i><span>了解乐游</span>
+        </a>
+        
+    </nav>
+    
+    <small class="hh-state text-center hh-font-size-14">2004-2015 © 海航乐游 loyoyo.com All rights reserved.</small>
+</footer>
+<!-- 底部导航 结束 -->
+	
+    <script type="text/javascript" src=" asserts/scripts/vendor.min.js "></script>
+
+
+	<script type="text/javascript" src=" asserts/scripts/main.js "></script>
+
+
+
+
+
+
+
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=tN9MC3mbmIOPW0Tc1dEz8QGm"></script>
+
+
+<script type="text/javascript">
+	
+	
+	var opts = {
+            width: 330, // 信息窗口宽度
+            height: 50, // 信息窗口高度
+            title: "鱼乡营业部" // 信息窗口标题
+        },
+        infoWindow = new BMap.InfoWindow("地址：重庆市巴南区鱼洞下河路31-4", opts), // 创建信息窗口对象
+
+        map = new BMap.Map("map"),
+        point = new BMap.Point(115.9819690000, 28.6970830000),
+        showinfo = function() {
+            map.centerAndZoom(point, 18);
+            map.clearOverlays();
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker);
+            marker.openInfoWindow(infoWindow); // 打开信息窗口
+            marker.addEventListener("dragend", function(e) {
+                this.openInfoWindow(infoWindow);
+                infoWindow.redraw();
+            });
+            marker.addEventListener("click", function(e) {
+                this.openInfoWindow(infoWindow);
+                infoWindow.redraw();
+            });
+        };
+    showinfo();
+    // map.enableScrollWheelZoom();
+    map.enableDoubleClickZoom(); //启用双击放大。
+    map.addControl(new BMap.NavigationControl());
+	
+	
+
+    
+
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>02_订单填写</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="asserts/styles/vendor.min.css">
+    
+    	<link rel="stylesheet" href="asserts/styles/main.css">
+    
+</head>
+
+</head>
+<body>
+    <div id="main">
+     	
+			
+
+<nav class="top-nav clearfix has-bg">
+	
+	
+	
+
+	<h3 class="text-center no-margin">02_订单填写</h3>
+</nav>
+
+     	
+
+        <div class="panel-primary">
+    <div class="panel-body hh-padding-5 hh-pt-0">
+        <form>
+             
+            <section>
+                <header>
+                    <h2 class="hh-font-size-16">订单信息</h2>
+                </header>
+                <table class="table table-bordered order-msg-table">
+                    
+                    <tr>
+                        <th>
+                             编号
+                        </th>
+                        <td>
+                             4507452 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             产品名称
+                        </th>
+                        <td>
+                             【初恋系列】重庆-越南岘港4天3 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             出行日期
+                        </th>
+                        <td>
+                            
+                            <div class="goDate inset-shadow" id="calendar_input"></div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             成人
+                        </th>
+                        <td>
+                            
+                            <span class="ctrl disable"><i class="glyphicon glyphicon-minus"></i></span>
+                            <input class="num inset-shadow" placeholder="1" min="1" max="20">
+                            <span class="ctrl"><i class="glyphicon glyphicon-plus"></i></span> 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             儿童
+                        </th>
+                        <td>
+                            
+                            <span class="ctrl disable"><i class="glyphicon glyphicon-minus"></i></span>
+                            <input class="num inset-shadow" placeholder="1" min="1" max="20">
+                            <span class="ctrl"><i class="glyphicon glyphicon-plus"></i></span> 
+                        </td>
+                    </tr>
+                    
+                </table>
+            </section>
+            
+            <section>
+                <header>
+                    <h2 class="hh-font-size-16">联系方式</h2>
+                </header>
+                <table class="table table-bordered order-msg-table">
+                    
+                    <tr>
+                        <th>
+                            
+                            <strong>*</strong>  姓名
+                        </th>
+                        <td>
+                            
+                            <input type="text" placeholder="请填写正确的真实姓名" class="texts inset-shadow"> 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            
+                            <strong>*</strong>  手机号码
+                        </th>
+                        <td>
+                            
+                            <input type="text" placeholder="请填写您的手机号码" class="texts inset-shadow"> 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            
+                            <strong>*</strong>  电子邮箱
+                        </th>
+                        <td>
+                            
+                            <input type="email" placeholder="请填写您的电子邮箱" class="texts inset-shadow"> 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             订单留言
+                        </th>
+                        <td>
+                            
+                            <textarea placeholder="如果您有特殊要求，请留言，不超过300字" class="inset-shadow"></textarea>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </section>
+            
+            <section>
+                <header>
+                    <h2 class="hh-font-size-16">专属顾问<small class='red-text'>（全国连锁旅游品牌，闪电响应，一对一贴心服务）</small></h2>
+                </header>
+                <table class="table table-bordered order-msg-table">
+                    
+                    <tr>
+                        <th>
+                             所在省/市
+                        </th>
+                        <td>
+                             
+                            <select name="" class="default  twins  inset-shadow">
+                                
+                                <option value="forloop.index"  select='selected' >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                            </select>
+                            
+                            <select name="" class="default  twins  inset-shadow">
+                                
+                                <option value="forloop.index"  select='selected' >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                            </select>
+                             
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             所在区域
+                        </th>
+                        <td>
+                             
+                            <select name="" class="default  inset-shadow">
+                                
+                                <option value="forloop.index"  select='selected' >请选择</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                            </select>
+                             
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                             网点服务
+                        </th>
+                        <td>
+                             
+                            <select name="" class="default  inset-shadow">
+                                
+                                <option value="forloop.index"  select='selected' >请选择</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                                <option value="forloop.index" >重庆</option>
+                                
+                            </select>
+                             
+                        </td>
+                    </tr>
+                    
+                </table>
+            </section>
+            
+        </form>
+    </div>
+</div>
+<!-- 弹窗日历 开始 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">选择出发日期</h4>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="hh-calendar clearfix">
+    <div class="clearfix hh-plr-20 red accent-2 white-text text-center hh-font-size-24 year-month">
+        <a href="" class="pull-left left-angel white-text">
+            <i class="mdi-navigation-chevron-left"></i>
+        </a>
+        <a href="" class="pull-right right-angel white-text">
+            <i class="mdi-navigation-chevron-right"></i>
+        </a>
+        <h3 class="no-margin hh-font-size-20">2015年3月</h3>
+    </div>
+    <ul class="clearfix grey lighten-4 text-center hh-font-size-16 black-text week">
+        
+        
+        	<li>日</li>
+        
+        	<li>一</li>
+        
+        	<li>二</li>
+        
+        	<li>三</li>
+        
+        	<li>四</li>
+        
+        	<li>五</li>
+        
+        	<li>六</li>
+        
+    </ul>
+    <ul class="clearfix text-center hh-font-size-14 days">
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>1</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>2</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>3</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>4</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>5</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>6</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>7</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>8</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>9</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>10</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>11</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>12</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>13</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>14</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>15</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>16</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>17</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>18</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>19</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="valid" >
+			    			<span>20</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>21</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>22</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>23</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>24</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="selected" >
+			    			<span>25</span>
+			    			
+				    			<p>¥12999</p>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>26</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>27</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>28</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>29</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>30</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+					
+					
+					
+
+					
+
+					
+
+			    		<a href="" class="" >
+			    			<span>31</span>
+			    			
+			    		</a>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+			
+				
+			    <li>
+			    	
+			    </li>
+	    
+	</ul>
+</div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn white red-text text-darken-2 hh-font-size-16">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗日历 结束 -->
+
+<div class="hh-height-50 clearfix"></div>
+
+<div class="bottom-nav-1">
+
+	<div class="col-xs-7 no-padding">
+		<a href="#" class="btn btn-block btn-lg border-radius-none red-text text-darken-4 grey darken-1 text-left">
+		
+		<small class='white-text hh-font-size-16'>总额：</small> <span class="hh-font-size-22 hh-font-weight">￥0</span>
+		</a>
+	</div>
+
+	<div class="col-xs-5 no-padding">
+		<a href="#" class="btn btn-block btn-lg border-radius-none white-text red lighten-1 hh-font-size-18">
+		
+		立即预订
+		</a>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+    </div>
+	
+    <script type="text/javascript" src=" asserts/scripts/vendor.min.js "></script>
+
+
+	<script type="text/javascript" src=" asserts/scripts/main.js "></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	
+
+    
+
+    
+    	$('#calendar_input').click(function(){
+    		$('#myModal').modal('show');
+    	});
+
+    
+</script>
+</body>
+
+</html>
